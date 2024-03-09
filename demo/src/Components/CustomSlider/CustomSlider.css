@@ -1,0 +1,35 @@
+/* CustomSlider.css */
+.slick-prev:before,
+.slick-next:before {
+  color: #EE4E34; /* Updated to a vibrant color */
+  font-size: 24px; /* Make arrows larger */
+}
+
+/* Style for the heading */
+.slider-heading {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #333; /* Dark color for better readability */
+  margin-bottom: 20px; /* Space between heading and slider */
+  margin-top: 40px; /* Space between heading and previous content */
+}
+
+/* Additional styling for the slider */
+.slick-slider .slick-track {
+  display: flex;
+  gap: 15px; /* Add space between slides */
+}
+
+.slick-slide > div {
+  margin: 0 auto; /* Center slides if they are smaller than container */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust dot size */
+  color: #EE4E34; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333; /* Active dot color */
+}

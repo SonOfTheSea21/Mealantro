@@ -1,0 +1,112 @@
+.malphabet-header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 50px; /* Set the width of the square */
+  height: 45px; /* Set the height of the square */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 310px;/* This centers the square in the parent container if it has a specific width */
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+  }
+  
+  
+  
+  .mmain-header {
+
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0; /* Remove margin if padding is applied to the container */
+  }
+  
+  .Meal_whole
+  {
+
+    padding-top: 40px 0; /* Same as the previous margin for .main-header */
+    width: 82%;
+  margin: auto;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  }
+
+  .malphabet-navigator {
+    
+    text-align: center;
+    padding: 10px; /* Adds padding inside the navigator */
+ /* Ensure this contrasts with the text color */
+    margin-bottom: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  .malphabet-navigator span {
+    
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 10px; /* Adds padding inside each span */
+    color: black;
+    border: 2px solid #EE4E34;
+    font-size: 20px;
+    display: inline-block; /* Allows margin and padding to be applied */
+    background: white;/* Just for visibility, can be removed */
+    min-height: 15px; /* Ensures that the span has a minimum height */
+
+    line-height: 20px; /* Line height equal to font size */
+  height: 45px; /* Fixed height */
+  width: 40px; /* Fixed width */
+  }
+
+  .malphabet-navigator span:hover {
+    color: white; /* Color on hover */
+    background-color: #EE4E34; /* Background color on hover */
+  }
+  
+  .malphabet-navigator span.disabled {
+    color: lightgray;
+    border: 2px solid lightgray;
+    pointer-events: none; /* Makes it unclickable */
+  }
+  
+  /* Existing styles */
+  .meals-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .Meal_List {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 4-column grid */
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    margin-right: 350px;
+    font-size: 20px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: inherit; /* You can set a specific color if you want */
+    
+  }
+  
+ 
+  
+  .Meal_li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 1px solid;
+  }
+
+  
+  

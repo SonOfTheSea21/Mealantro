@@ -1,0 +1,109 @@
+.icontainer {
+    width: 70%; /* Adjust based on your preference */
+    margin: auto;
+    overflow-x: auto; /* Ensures responsiveness */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    margin-top: 40px;
+  }
+
+  .cart_table
+    {
+        justify-content: center;
+        justify-items: center;
+    }
+
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1.5fr 2.25fr 0.75fr; /* Adjust the fr units based on your content */
+    text-align: center;
+    align-items: center;
+    padding: 1rem 2rem; /* Increase padding for larger cells */
+    font-size: 1.2rem;
+
+  }
+  
+  /* Apply to the first row of your list to mimic table headers */
+  .cart_heading {
+    width: 100%;
+    background-color: #f4f4f4; /* Light grey background for the header */
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Adds a line to separate header */
+    font-size: 2rem; /* Larger font for headers */
+    padding: 1.2rem 2rem;
+  }
+  
+  /* Styling for each item in the list */
+  .cart-item {
+    width: 100%;
+    border-bottom: 1px solid #eee; /* Light line between rows */
+    padding: 1rem 0;
+  }
+  
+  /* Additional styles for aesthetic improvements */
+  .cart-hide {
+    display: block; /* or 'none' if you want to hide in smaller screens */
+  }
+  
+  .remove_icon {
+    color: #e74c3c;
+    cursor: pointer;
+    text-align: center; /* Center the icon */
+    font-size: 2rem;
+  }
+
+  .search-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .amount-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Reduced gap for compact look */
+  }
+  
+  .amount-style {
+    font-size: 2rem; /* Adjusted for better table fit */
+  }
+  
+
+  .boldAndUnderlined {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 4rem;
+  }
+
+
+  .cart-two-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .btn-clear {
+      background-color: #e74c3c;
+    }
+  }
+
+  .time {
+    display: flex; /* This makes the container a flexbox container */
+    align-items: center; /* This vertically aligns the items in the middle */
+    gap: 10px; /* This adds some space between the items */
+    font-size: xx-large;
+    justify-content: center;
+    max-width: 40%;
+    background-color: #f4f4f4; /* Light grey background for the header */
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Adds a line to separate header */
+    font-size: 2rem; /* Larger font for headers */
+    padding: 1.2rem 2rem;
+    margin-left: 540px;
+  }

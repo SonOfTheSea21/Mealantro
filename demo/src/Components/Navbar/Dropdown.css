@@ -1,0 +1,40 @@
+.services-submenu {
+    width: 8rem;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+
+  }
+  
+  .services-submenu li {
+    background: linear-gradient(90deg, #EE4E34 0%, #EE4E34 100%) !important;
+    cursor: pointer;
+  }
+  
+  .services-submenu li a:hover {
+    background: linear-gradient(90deg, #FCEDDA 0%, #FCEDDA 100%);
+  }
+  
+  .services-submenu.clicked {
+    display: none;
+  }
+  
+
+
+
+  .drop-links {
+  font-size: smaller;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  padding: 0.6rem !important;
+  height: 100% !important;
+
+}
+
+.drop-links:hover {
+  transition: all 0.2s ease-out !important;
+  color:#EE4E34 !important;
+}

@@ -1,0 +1,335 @@
+.pform-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vw;
+    gap: 2vw; /* Adjust the space between the photo and the information */
+  }
+  
+  body {
+    color: #797979;
+    background: linear-gradient(90deg, #FCEDDA 0%, #FCEDDA 100%);
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;  
+  }
+
+  .rupdate-btn{
+    
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  
+  .profile-nav, .profile-info {
+    margin-top: 1vw;   
+  }
+  
+  .profile-nav .user-heading {
+    background: linear-gradient(90deg, #EE4E34 0%, #EE4E34 100%);
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .profile-nav .user-heading.round a  {
+    border-radius: 50%;
+    border: 30px solid rgba(255,255,255,0.3);
+    display: inline-block;
+  }
+  
+  .profile-nav .user-heading a img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+  }
+  
+  .profile-nav .user-heading h1 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  
+  .profile-nav .user-heading p {
+    font-size: 12px;
+  }
+
+  .pinfo-item p {
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+    display: inline-block; /* Needed for vertical-align or position adjustments to work */
+    position: relative;
+    top: -5px; /* Adjust this value as needed to move the text up */
+  }
+
+
+  .directions-textarea {
+    width: 100%; /* Make the textarea span the full container width */
+    padding: 10px; /* Add some padding inside the textarea */
+    box-sizing: border-box; /* Ensure padding doesn't increase the size beyond 100% */
+    margin-left: 10px;;
+  }
+
+  .input-and-image {
+    display: flex;
+    align-items: center; /* Aligns the file input and image vertically */
+}
+
+.pinfo-item .file-input {
+    width: calc(100% - 110px); /* Adjusts the width to leave space for the image */
+    margin-left: 10px; /* Space between file input and image */
+    height: auto; /* Adjusts height to fit content */
+    font-size: small;
+    opacity: 1; /* Corrected for visibility */
+    cursor: pointer;
+}
+
+.pinfo-item .profile-image {
+    width: 50px; /* Adjusted to match the desired image size */
+    height: 50px;
+    object-fit: cover;
+}
+  
+  .profile-nav ul {
+    margin-top: 1px;
+  }
+  
+  .profile-nav ul > li {
+    border-bottom: 1px solid #ebeae6;
+    margin-top: 0;
+    line-height: 30px;
+  }
+
+  .pinfo-item .halal-checkbox {
+    width: 32px; /* Make the checkbox larger */
+    height: 32px; /* Make the checkbox larger */
+    cursor: pointer; /* Change cursor to pointer when hovering over the checkbox */
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .profile-nav ul > li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-nav ul > li > a {
+    border-radius: 0;
+    color: #89817f;
+    border-left: 5px solid #fff;
+  }
+  
+  .profile-nav ul > li > a:hover, .profile-nav ul > li > a:focus, .profile-nav ul li.active  a {
+    background: #f8f7f5 !important;
+    border-left: 5px solid #EE4E34;
+    color: #89817f !important;
+  }
+  
+  .profile-nav ul > li:last-child > a:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .profile-nav ul > li > a > i{
+    font-size: 16px;
+    padding-right: 10px;
+    color: #bcb3aa;
+  }
+  
+  .r-activity {
+    margin: 6px 0 0;
+    font-size: 12px;
+  }
+  
+  .nav-pills {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .p-text-area, .p-text-area:focus {
+    border: none;
+    font-weight: 300;
+    box-shadow: none;
+    color: #c3c3c3;
+    font-size: 16px;
+  }
+  
+  .profile-info .panel-footer {
+    background-color:#f8f7f5 ;
+    border-top: 1px solid #e7ebee;
+    padding: 10px; /* Added padding to separate content from footer */
+  }
+  
+  .profile-info .panel-footer ul li a {
+    color: #7a7a7a;
+  }
+  
+  .bio-graph-heading {
+    background: linear-gradient(90deg, #EE4E34 0%, #EE4E34 100%);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding: 40px 110px;
+    border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .bio-graph-info {
+    color: #89817e;
+  }
+  
+  .bio-graph-info h1 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+  
+  .pinfo-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px;
+  }
+  
+  .pinfo-item label {
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  
+  .row {
+    height: auto; /* Set height to auto to allow content to expand */
+  }
+  
+  
+  h1{
+    padding-top: 30px;
+  }
+  
+  
+  .pupdate--section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: 1; /* Take remaining space */
+    margin-left: 10px;
+    width: 70%; /* Set the width to 100% */ /* Adjust spacing between label and input */
+  }
+  
+  .sml{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  /* Overall container of the Multiselect component */
+.multiSelectContainer {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+/* The dropdown that shows the selected items and input */
+.searchBox {
+  padding: 5px 10px;
+}
+
+/* Individual selected item styles */
+.selectedItem {
+  background-color: #EE4E34;
+  color: white;
+  border-radius: 15px;
+  padding: 2px 6px;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The 'X' button on selected items */
+.selectedItemIcon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* Placeholder text style */
+.inputField {
+  color: #6c757d; /* Placeholder text color */
+}
+
+/* Dropdown list container */
+.optionContainer {
+  border: 1px solid #ced4da;
+  border-top: none; /* To blend with the input box */
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Individual dropdown option styles */
+.option {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.option:hover, .option:focus {
+  background-color: #EE4E34;
+}
+
+/* Style for the option that is highlighted (by keyboard navigation) */
+.optionFocused {
+  background-color: #EE4E34;
+}
+
+
+.add-button {
+  background-color: #EE4E34;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-out !important;
+}
+
+.add-button:hover {
+  transition: all 0.3s ease-out !important;
+  background: #fff !important;
+  color: #242424 !important;
+  transition: 250ms !important;
+}
+
+.ingredient-list {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredient-name {
+  font-weight: bold;
+}
+
+.ingredient-action {
+  cursor: pointer;
+  color: #EE4E34;
+  margin-left: 10px;
+}

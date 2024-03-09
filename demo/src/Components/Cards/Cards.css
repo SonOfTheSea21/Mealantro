@@ -1,0 +1,234 @@
+.cards {
+  padding: 4rem;
+  background: transparent;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.cards__item {
+  background: white;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+
+}
+
+.sliderr {
+  color: black;
+  display: flex;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.cards__item__percent-badge {
+  z-index: 10;
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #EE4E34; /* or any other color you prefer */
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+  width: 50px; /* Size of the circle */
+  height: 50px; /* Size of the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+  
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+/* Styling for data-category */
+/* Styling for data-category */
+.cards__item__pic-wrap::before {
+  z-index: 10;
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc(100% - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+}
+
+/* Styling for data-halalharam */
+.cards__item__pic-wrap::after {
+  content: attr(data-halalharam);
+  position: absolute;
+  bottom: 20px; /* Adjust position as needed */
+  right: 6px; 
+  top:6px;
+  height: min-content;
+  padding: 6px 8px;
+  max-width: calc(100% - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--Rcolor); /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+
+
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
+ul{
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+
+.cuisineCard{
+ margin-left: 420px;
+}
+
+
+.sboldAndUnderlined {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 4rem;
+  top: 0;
+}
+
+
+
+.inventory-cta {
+  margin-top: 250px;
+  padding: 20px; /* Spacing around the content */
+  text-align: center; /* Center the text inside the container */
+  margin-bottom: 250px; /* Space below the CTA before the next content */
+}
+
+.inventory-cta h2 {
+  color: #333; /* Dark grey color for the heading */
+  margin-bottom: 10px; /* Small space below the heading */
+  font-size: 46px; /* Large font size for visibility */
+}
+
+.inventory-cta p {
+  color: #666; /* Medium grey for the paragraph text */
+  margin-bottom: 20px; /* Space below the paragraph before the button */
+  font-size: 42px;
+}
+
+/* Style for the button */
+.cta-button {
+  display: inline-block; /* Allows setting dimensions */
+  background-color: #EE4E34; /* Bootstrap primary blue */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* Spacing inside the button */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Makes the button text bold */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease; /* Smooth background color change on hover */
+  font-size: 38px;
+}
+
+.cta-button:hover, .cta-button:focus {
+  background-color: #ff3314; /* Darker blue on hover/focus for visual feedback */
+  color: #ffffff; /* Ensure text remains white */
+  text-decoration: none; /* Continues to remove underline on hover/focus */
+}

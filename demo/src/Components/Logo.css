@@ -1,0 +1,25 @@
+.logobar {
+  background: linear-gradient(90deg, #EE4E34 0%, #EE4E34 100%);
+  height: 80px;
+  position: relative; /* This is crucial for absolute positioning of children */
+  top: 0;
+  z-index: 999;
+}
+
+.logo2 {
+  position: absolute;
+  top: 55%; /* Center vertically */
+  left: 25%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to truly center */
+  max-width: 350px; /* Adjust as needed */
+  height: auto; /* Keep aspect ratio */
+}
+
+.logo {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning to truly center */
+  max-width: 350px; /* Adjust as needed */
+  height: auto; /* Keep aspect ratio */
+}

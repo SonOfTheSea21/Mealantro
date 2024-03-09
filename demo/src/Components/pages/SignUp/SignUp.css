@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .form-container {
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    background-color: white;
+    padding: 3cqi;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+    height: 650px;
+  }
+  
+
+
+  .createAccount{
+    padding: 10px;
+    border-bottom: 4px solid #FF6347;
+    margin-bottom: 20px;
+  }
+
+
+.hero-btns {
+    margin-top: 32px;
+    align-items: center;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .SignUpButton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+  }
